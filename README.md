@@ -1,4 +1,3 @@
-# extension-template
+# Academic Profiles
 
-This repository is a blank template of an SKG-IF extension.
-
+ This repository holds the documentation of the extension of the SKG-IF data model to describe academic profiles used by researchers for detailing aspects of their career.
