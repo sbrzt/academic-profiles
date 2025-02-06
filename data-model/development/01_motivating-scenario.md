@@ -30,7 +30,7 @@ Article records:
     - Authors: Yoyota Vuvuli, Ahmed El-Zein, Clara Green
     - Fields/Topics: Environmental Science, Machine Learning, Precision Agriculture
     - Contribution Roles: Yoyota Vuvuli: Conceptualization, Methodology, Writing (Lead Author) | Ahmed El-Zein: Data Analysis, Software Development | Clara Green: Fieldwork, Writing (Review & Editing)
-    - Affiliation at Time of Publication: University of Narnia
+    - Affiliation at Time of Publication: University of Bologna
     - Citations: 34
     - Downloads: 1,200
     - Reproducibility Badge: Data Open (DOI: 10.1234/agri2022data)
@@ -41,7 +41,7 @@ Article records:
     - Authors: Yoyota Vuvuli, James Patterson, Rina Huang
     - Fields/Topics: Machine Learning, Biomedical Imaging
     - Contribution Roles: Yoyota Vuvuli: Conceptualization, Algorithm Design, Supervision | James Patterson: Software Implementation, Data Curation | Rina Huang: Validation, Experimentation
-    - Affiliation at Time of Publication: University of Narnia
+    - Affiliation at Time of Publication: University of Bologna
     - Citations: 42
     - Downloads: 1,500
     - Reproducibility Badge: Code Open (GitHub: github.com/vuvuli2020-framework)
@@ -52,7 +52,7 @@ Article records:
     - Authors: Yoyota Vuvuli, Marie Dupont, Hiroshi Nakamura
     - Fields/Topics: Environmental Science, Data Science
     - Contribution Roles: Yoyota Vuvuli: Conceptualization, Ontology Design, Writing (Lead Author) | Marie Dupont: Data Integration, Writing (Review) | Hiroshi Nakamura: Technical Infrastructure, Validation
-    - Affiliation at Time of Publication: University of Narnia
+    - Affiliation at Time of Publication: University of Bologna
     - Citations: 18
     - Downloads: 950
     - Reproducibility Badge: FAIR Data (FAIRScore: 85%)
@@ -63,7 +63,7 @@ Article records:
     - Authors: Yoyota Vuvuli, Sarah Michaels
     - Fields/Topics: Machine Learning, Ethics in AI
     - Contribution Roles: Yoyota Vuvuli: Framework Design, Case Studies, Writing (Lead Author) | Sarah Michaels: Literature Review, Ethical Analysis
-    - Affiliation at Time of Publication: University of Narnia
+    - Affiliation at Time of Publication: University of Bologna
     - Citations: 30
     - Downloads: 1,950
     - Reproducibility Badge: Transparent Algorithms (DOI: 10.5678/ethicalai2019)
@@ -138,12 +138,12 @@ Article-Level Indicators
 John Doe has created an academic profile using the "Resume for Researchers" Narrative CV template by Royal Society. His profile consists of a series of narratives carefully written by the researcher to provide answers to the respective modules. 
 
 - Name: John Doe
-- Current position: Principal Researcher at University of Narnia
+- Current position: Principal Researcher at University of Bologna
 - Contact information: j.doe@narniauni.edu
 - Personal statement: I am a passionate and driven materials scientist dedicated to advancing sustainable solutions to global environmental challenges. My research focuses on the development of biodegradable polymers, aiming to reduce plastic waste and its impact on ecosystems. With over a decade of experience in academic and collaborative industry projects, I have cultivated a multidisciplinary approach, integrating chemistry, materials science, and environmental studies to drive innovation in sustainable materials. Throughout my career, I have been committed to fostering an inclusive and collaborative research environment. By mentoring early-career researchers, supervising diverse teams, and organizing training programs, I have supported others in achieving their potential while ensuring knowledge transfer across generations of scientists. Beyond my research contributions, I actively engage with the wider scientific and public communities to amplify the impact of my work. Whether through advising policymakers on sustainable packaging legislation or participating in outreach programs to inspire young minds, I strive to bridge the gap between science and society. 
 - Module 1. Contributions to General Knowledge: I have dedicated my career to advancing the understanding of sustainable materials science, focusing on the development of biodegradable polymers for packaging applications. My work has led to the publication of 25 peer-reviewed journal articles, including high-impact papers in Nature Materials and Advanced Functional Materials. I led the “Sustainable Polymers Initiative,” a collaborative research project funded by the European Research Council, which developed a novel polymer blend with 50% lower environmental impact compared to traditional plastics. This research has been widely cited and has attracted industrial interest, leading to a joint patent with GreenPack Ltd. Supervising a diverse group of PhD students and postdoctoral researchers, I have fostered innovation and collaboration, resulting in four students winning national awards for their research excellence.
 - Module 2. Contributions to the Development of Individuals: I am deeply committed to mentoring and supporting the next generation of researchers. Over the past five years, I have served as a mentor for the Royal Society’s “Future Leaders Program,” guiding early-career scientists in grant writing, career development, and balancing academic and personal responsibilities. I have organized annual training workshops on advanced polymer synthesis techniques, attracting participants from academic and industrial backgrounds. These workshops have been instrumental in equipping attendees with practical skills and fostering industry-academia collaborations. Additionally, I co-developed an undergraduate internship program within my department, which has provided hands-on research opportunities to over 30 students, many of whom have progressed to postgraduate studies.
-- Module 3. Contributions to the Wider Research Community: As an advocate for open science, I have chaired the University of Narnia’s Open Access Committee, increasing departmental compliance with open data policies from 60% to 90% over three years. I have been an active member of the editorial boards of Green Chemistry and Journal of Polymer Science, ensuring rigorous peer review standards while promoting the dissemination of innovative research. To strengthen international collaboration, I co-founded the “Global Polymer Network,” a forum connecting over 300 researchers worldwide to share best practices and emerging trends in sustainable materials science.
+- Module 3. Contributions to the Wider Research Community: As an advocate for open science, I have chaired the University of Bologna’s Open Access Committee, increasing departmental compliance with open data policies from 60% to 90% over three years. I have been an active member of the editorial boards of Green Chemistry and Journal of Polymer Science, ensuring rigorous peer review standards while promoting the dissemination of innovative research. To strengthen international collaboration, I co-founded the “Global Polymer Network,” a forum connecting over 300 researchers worldwide to share best practices and emerging trends in sustainable materials science.
 - Module 4. Contributions to Society: My research has directly contributed to addressing global environmental challenges. The biodegradable polymer developed in the Sustainable Polymers Initiative is now being scaled up by GreenPack Ltd., with the potential to replace traditional plastics in 20% of European food packaging markets by 2030. To raise public awareness, I have participated in science communication initiatives such as the BBC series Future Materials, explaining the role of sustainable materials in tackling climate change. I also contribute regularly to outreach programs in local schools, inspiring young students to pursue careers in STEM fields. In 2022, I collaborated with policymakers to draft recommendations for sustainable packaging legislation, which influenced the European Union’s “Green Materials Directive.
 
 ### Example 3
