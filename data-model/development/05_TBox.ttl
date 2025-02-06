@@ -1,0 +1,296 @@
+@prefix : <https://example.org/skg-if/extention/01/schema/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://example.org/skg-if/extention/01/schema/> .
+
+<https://example.org/skg-if/extention/01/schema/> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://example.org/skg-if/extention/01/schema/usesIdentifierScheme
+:usesIdentifierScheme rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasPart
+:hasPart rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/partOf
+:partOf rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasIdentifier
+:hasIdentifier rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/relatesToOrganization
+:relatesToOrganization rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/withRole
+:withRole rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/holdsRoleInTime
+:holdsRoleInTime rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/realization
+:realization rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/holdsBibliometricDataInTime
+:holdsBibliometricDataInTime rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/withBibliometricData
+:withBibliometricData rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/withinContext
+:withinContext rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasMeasure
+:hasMeasure rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/wasGeneratedBy
+:wasGeneratedBy rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/wasAssociatedWith
+:wasAssociatedWith rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/accordingTo
+:accordingTo rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/submits
+:submits rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/isDocumentContextFor
+:isDocumentContextFor rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/withContribution
+:withContribution rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/isRelatedToRoleInTime
+:isRelatedToRoleInTime rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/isHeldBy
+:isHeldBy rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/used
+:used rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://example.org/skg-if/extention/01/schema/name
+:name rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasLiteralValue
+:hasLiteralValue rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/title
+:title rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/prefLabel
+:prefLabel rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/issued
+:issued rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/bibliographicCitation
+:bibliographicCitation rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasContent
+:hasContent rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasNumericValue
+:hasNumericValue rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/description
+:description rdf:type owl:DatatypeProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/hasValue
+:hasValue rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://example.org/skg-if/extention/01/schema/IdentifierScheme
+:IdentifierScheme rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Identifier
+:Identifier rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/ScholarlyWork
+:ScholarlyWork rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Organization
+:Organization rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/RoleInTime
+:RoleInTime rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Role
+:Role rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Agent
+:Agent rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Work
+:Work rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Dataset
+:Dataset rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Expression
+:Expression rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/ExpressionCollection
+:ExpressionCollection rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Contribution
+:Contribution rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/BibliometricDataInTime
+:BibliometricDataInTime rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/BibliometricData
+:BibliometricData rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Activity
+:Activity rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/Entity
+:Entity rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/CategorialBibliometricData
+:CategorialBibliometricData rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/NumericBibliometricData
+:NumericBibliometricData rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/BibliometricMeasure
+:BibliometricMeasure rdf:type owl:Class .
+
+
+###  https://example.org/skg-if/extention/01/schema/SubjectTerm
+:SubjectTerm rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://example.org/skg-if/extention/01/schema/github
+:github rdf:type :IdentifierScheme .
+
+
+###  https://example.org/skg-if/extention/01/schema/url
+:url rdf:type :IdentifierScheme .
+
+
+###  https://example.org/skg-if/extention/01/schema/author
+:author rdf:type :Role .
+
+
+###  https://example.org/skg-if/extention/01/schema/doi
+:doi rdf:type :IdentifierScheme .
+
+
+###  https://example.org/skg-if/extention/01/schema/principal-researcher
+:principal-researcher rdf:type :Role .
+
+
+###  https://example.org/skg-if/extention/01/schema/conceptualization
+:conceptualization rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/ontology-design
+:ontology-design rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/writing-lead
+:writing-lead rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/writing-review
+:writing-review rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/data-integration
+:data-integration rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/technical-infrastructure
+:technical-infrastructure rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/validation
+:validation rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/author-citation-count
+:author-citation-count rdf:type :BibliometricMeasure .
+
+
+###  https://example.org/skg-if/extention/01/schema/author-publication-count
+:author-publication-count rdf:type :BibliometricMeasure .
+
+
+###  https://example.org/skg-if/extention/01/schema/author-download-count
+:author-download-count rdf:type :BibliometricMeasure .
+
+
+###  https://example.org/skg-if/extention/01/schema/publication-citation-count
+:publication-citation-count rdf:type :BibliometricMeasure .
+
+
+###  https://example.org/skg-if/extention/01/schema/publication-download-count
+:publication-download-count rdf:type :BibliometricMeasure .
