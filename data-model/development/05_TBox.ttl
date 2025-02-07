@@ -93,12 +93,20 @@
 
 
 ###  https://example.org/skg-if/extention/01/schema/used
-:used rdf:type owl:DatatypeProperty .
+:used rdf:type owl:ObjectProperty .
+
+
+###  https://example.org/skg-if/extention/01/schema/cites
+:cites rdf:type owl:ObjectProperty .
 
 
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://example.org/skg-if/extention/01/schema/hasEmail
+:hasEmail rdf:type owl:DatatypeProperty .
+
 
 ###  https://example.org/skg-if/extention/01/schema/name
 :name rdf:type owl:DatatypeProperty .
@@ -274,6 +282,42 @@
 
 ###  https://example.org/skg-if/extention/01/schema/validation
 :validation rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/methodology
+:methodology rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/data-analysis
+:data-analysis rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/software-development
+:software-development rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/fieldwork
+:fieldwork rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/algorithm-design
+:algorithm-design rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/supervision
+:supervision rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/software-implementation
+:software-implementation rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/data-curation
+:data-curation rdf:type :Contribution .
+
+
+###  https://example.org/skg-if/extention/01/schema/experimentation
+:experimentation rdf:type :Contribution .
 
 
 ###  https://example.org/skg-if/extention/01/schema/author-citation-count
