@@ -1,0 +1,433 @@
+@prefix bido: <http://purl.org/spar/bido/> .
+@prefix c4o: <http://purl.org/spar/c4o/> .
+@prefix cito: <http://purl.org/spar/cito/> .
+@prefix datacite: <http://purl.org/spar/datacite/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix frapo: <http://purl.org/cerif/frapo/> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix literal: <http://purl.org/spar/literal/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pro: <http://purl.org/spar/pro/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix scoro: <http://purl.org/spar/scoro/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix tvc: <http://purl.org/spar/tvc/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/skg-if/ontology/data/01/> a owl:Ontology ;
+    owl:imports <https://example.org/skg-if/extention/01/schema/> .
+
+<https://w3id.org/skg-if/ontology/data/01/article-1> a fabio:ScholarlyWork ;
+    dcterms:title "Enhancing Sustainable Agriculture through AI-Driven Soil Monitoring" ;
+    bido:holdsBibliometricDataInTime [ dcterms:description "The total number of downloads received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-download-count ;
+                    bido:hasNumericValue 1200 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher were collected and their downloads were counted." ;
+                    prov:used [ dcterms:description "Usage data and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ] ],
+        [ bido:withBibliometricData [ a bido:CategorialBibliometricData ;
+                    tvc:withinContext [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
+                                    literal:hasLiteralValue "10.1234/agri2022data" ] ] ;
+                    skos:prefLabel "Data Open" ] ],
+        [ bido:withBibliometricData <https://w3id.org/skg-if/ontology/data/01/environmental-science>,
+                <https://w3id.org/skg-if/ontology/data/01/machine-learning>,
+                <https://w3id.org/skg-if/ontology/data/01/precision-agriculture> ],
+        [ dcterms:description "The total number of citations received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-citation-count ;
+                    bido:hasNumericValue 34 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All citations from other articles pointing to the article of interest were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/Bip-Ranker" ] ] ] ] ;
+    datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
+            literal:hasLiteralValue "10.1234/envinf.2022.001" ] ;
+    pro:isRelatedToRoleInTime [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/ahmed-el-zein> ;
+            scoro:withContribution scoro:analyses-data ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/ahmed-el-zein> ;
+            scoro:withContribution scoro:creates-software ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/clara-green> ;
+            scoro:withContribution scoro:revises-manuscript ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:writes-manuscript-draft ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/clara-green> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:conceives-project ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:develops-methodology ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/clara-green> ;
+            scoro:withContribution scoro:provides-service ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/ahmed-el-zein> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ] ;
+    frbr:realization [ dcterms:issued "2024-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            frbr:partOf [ dcterms:title "Journal of Environmental Informatics" ] ] .
+
+<https://w3id.org/skg-if/ontology/data/01/article-2> a fabio:ScholarlyWork ;
+    dcterms:title "A Novel Framework for Interpretable Deep Learning in Biomedical Imaging" ;
+    bido:holdsBibliometricDataInTime [ bido:withBibliometricData <https://w3id.org/skg-if/ontology/data/01/biomedical-imaging>,
+                <https://w3id.org/skg-if/ontology/data/01/machine-learning> ],
+        [ dcterms:description "The total number of citations received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-citation-count ;
+                    bido:hasNumericValue 42 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All citations from other articles pointing to the article of interest were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/Bip-Ranker" ] ] ] ],
+        [ bido:withBibliometricData [ a bido:CategorialBibliometricData ;
+                    tvc:withinContext [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:github ;
+                                    literal:hasLiteralValue "github.com/vuvuli2020-framework" ] ] ;
+                    skos:prefLabel "Code Open" ] ],
+        [ dcterms:description "The total number of downloads received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-download-count ;
+                    bido:hasNumericValue 1500 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher were collected and their downloads were counted." ;
+                    prov:used [ dcterms:description "Usage data and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ] ] ;
+    datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
+            literal:hasLiteralValue "10.5678/ieeetmi.2020.045" ] ;
+    pro:isRelatedToRoleInTime [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/rina-huang> ;
+            scoro:withContribution scoro:performs-experiments ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:supervises-colleagues ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/rina-huang> ;
+            scoro:withContribution scoro:ensures-regulatory-compliance ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/rina-huang> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/james-patterson> ;
+            scoro:withContribution scoro:provides-software ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/james-patterson> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:provides-technical-support ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:conceives-project ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/james-patterson> ;
+            scoro:withContribution scoro:processes-data ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ] ;
+    pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+    frbr:realization [ dcterms:issued "2021-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            frbr:partOf [ dcterms:title "IEEE Transactions on Medical Imaging" ] ] .
+
+<https://w3id.org/skg-if/ontology/data/01/article-3> a fabio:ScholarlyWork ;
+    dcterms:title "Towards a Comprehensive Ontology for Climate Data Sharing" ;
+    bido:holdsBibliometricDataInTime [ bido:withBibliometricData <https://w3id.org/skg-if/ontology/data/01/biomedical-imaging>,
+                <https://w3id.org/skg-if/ontology/data/01/environmental-science> ],
+        [ dcterms:description "The total number of downloads received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-download-count ;
+                    bido:hasNumericValue 950 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher were collected and their downloads were counted." ;
+                    prov:used [ dcterms:description "Usage data and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ] ],
+        [ bido:withBibliometricData [ a bido:CategorialBibliometricData ;
+                    tvc:withinContext [ prov:value "85%" ] ;
+                    skos:prefLabel "FAIR Data" ] ],
+        [ dcterms:description "The total number of citations received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-citation-count ;
+                    bido:hasNumericValue 18 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All citations from other articles pointing to the article of interest were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/Bip-Ranker" ] ] ] ] ;
+    datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
+            literal:hasLiteralValue "10.9101/dscc.2021.002" ] ;
+    pro:isRelatedToRoleInTime [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/hiroshi-nakamura> ;
+            scoro:withContribution scoro:maintains-IT-Infrastructure ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/marie-dupont> ;
+            scoro:withContribution scoro:provides-exising-data ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/hiroshi-nakamura> ;
+            scoro:withContribution scoro:ensures-regulatory-compliance ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/hiroshi-nakamura> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/marie-dupont> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:writes-manuscript-draft ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:conceives-project ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/marie-dupont> ;
+            scoro:withContribution scoro:revises-manuscript ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:undertakes-modelling ] ;
+    frbr:realization [ dcterms:issued "2023-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            frbr:partOf [ dcterms:title "Data Science for Climate Change" ] ] .
+
+<https://w3id.org/skg-if/ontology/data/01/article-4> a fabio:ScholarlyWork ;
+    dcterms:title "Ethical AI for Equitable Healthcare Diagnostics" ;
+    bido:holdsBibliometricDataInTime [ dcterms:description "The total number of citations received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-citation-count ;
+                    bido:hasNumericValue 30 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All citations from other articles pointing to the article of interest were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/Bip-Ranker" ] ] ] ],
+        [ bido:withBibliometricData [ a bido:CategorialBibliometricData ;
+                    tvc:withinContext [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
+                                    literal:hasLiteralValue "10.5678/ethicalai2019" ] ] ;
+                    skos:prefLabel "Transparent Algorithms" ] ],
+        [ bido:withBibliometricData <https://w3id.org/skg-if/ontology/data/01/ethics-in-ai>,
+                <https://w3id.org/skg-if/ontology/data/01/machine-learning> ],
+        [ dcterms:description "The total number of downloads received by the article of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:publication-download-count ;
+                    bido:hasNumericValue 1950 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher were collected and their downloads were counted." ;
+                    prov:used [ dcterms:description "Usage data and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ] ] ;
+    datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:doi ;
+            literal:hasLiteralValue "10.3456/jrai.2019.014" ] ;
+    pro:isRelatedToRoleInTime [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/sarah-michaels> ;
+            scoro:withContribution scoro:leads-investigation ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:writes-manuscript-draft ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/sarah-michaels> ;
+            pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole pro:author ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:designs-experiments ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> ;
+            scoro:withContribution scoro:formulates-research-questions ],
+        [ pro:isHeldBy <https://w3id.org/skg-if/ontology/data/01/sarah-michaels> ;
+            scoro:withContribution scoro:provides-advice ] ;
+    pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+    frbr:realization [ dcterms:issued "2019-01-01T00:00:00+00:00"^^xsd:dateTime ;
+            frbr:partOf [ dcterms:title "Journal of Responsible AI Applications" ] ] .
+
+<https://w3id.org/skg-if/ontology/data/01/henry-jekyll> a foaf:Agent ;
+    frapo:submits <https://w3id.org/skg-if/ontology/data/01/academic-profile-3> ;
+    foaf:name "Henry Jenkyll" .
+
+<https://w3id.org/skg-if/ontology/data/01/john-doe> a foaf:Agent ;
+    frapo:submits <https://w3id.org/skg-if/ontology/data/01/academic-profile-2> ;
+    pro:holdsRoleInTime [ pro:relatesToOrganization <https://w3id.org/skg-if/ontology/data/01/university-of-bologna> ;
+            pro:withRole scoro:principal-investigator ] ;
+    foaf:mbox "j.doe@narniauni.edu" ;
+    foaf:name "John Doe" .
+
+scoro:analyses-data a scoro:Contribution ;
+    skos:prefLabel "Data Analysis" .
+
+scoro:creates-software a scoro:Contribution ;
+    skos:prefLabel "Software Development" .
+
+scoro:designs-experiments a scoro:Contribution ;
+    skos:prefLabel "Framework Design" .
+
+scoro:develops-methodology a scoro:Contribution ;
+    skos:prefLabel "Methodology" .
+
+scoro:formulates-research-questions a scoro:Contribution ;
+    skos:prefLabel "Case Studies" .
+
+scoro:leads-investigation a scoro:Contribution ;
+    skos:prefLabel "Literature Review" .
+
+scoro:maintains-IT-Infrastructure a scoro:Contribution ;
+    skos:prefLabel "Technical Infrastructure" .
+
+scoro:performs-experiments a scoro:Contribution ;
+    skos:prefLabel "Experimentation" .
+
+scoro:processes-data a scoro:Contribution ;
+    skos:prefLabel "Data Curation" .
+
+scoro:provides-advice a scoro:Contribution ;
+    skos:prefLabel "Ethical Analysis" .
+
+scoro:provides-exising-data a scoro:Contribution ;
+    skos:prefLabel "Data Integration" .
+
+scoro:provides-service a scoro:Contribution ;
+    skos:prefLabel "Fieldwork" .
+
+scoro:provides-software a scoro:Contribution ;
+    skos:prefLabel "Software Implementation" .
+
+scoro:provides-technical-support a scoro:Contribution ;
+    skos:prefLabel "Algorithm Design" .
+
+scoro:supervises-colleagues a scoro:Contribution ;
+    skos:prefLabel "Supervision" .
+
+scoro:undertakes-modelling a scoro:Contribution ;
+    skos:prefLabel "Ontology Design" .
+
+<https://w3id.org/skg-if/ontology/data/01/academic-profile-1> a fabio:Expression .
+
+<https://w3id.org/skg-if/ontology/data/01/academic-profile-2> a fabio:Expression ;
+    frbr:part [ dcterms:title "Contributions to General Knowledge" ;
+            c4o:hasContent "I have dedicated my career to advancing the understanding of sustainable materials science, focusing on the development of biodegradable polymers for packaging applications. My work has led to the publication of 25 peer-reviewed journal articles, including high-impact papers in Nature Materials and Advanced Functional Materials. I led the “Sustainable Polymers Initiative,” a collaborative research project funded by the European Research Council, which developed a novel polymer blend with 50% lower environmental impact compared to traditional plastics. This research has been widely cited and has attracted industrial interest, leading to a joint patent with GreenPack Ltd. Supervising a diverse group of PhD students and postdoctoral researchers, I have fostered innovation and collaboration, resulting in four students winning national awards for their research excellence." ],
+        [ dcterms:title "Contributions to the Development of Individuals" ;
+            c4o:hasContent "I am deeply committed to mentoring and supporting the next generation of researchers. Over the past five years, I have served as a mentor for the Royal Society’s “Future Leaders Program,” guiding early-career scientists in grant writing, career development, and balancing academic and personal responsibilities. I have organized annual training workshops on advanced polymer synthesis techniques, attracting participants from academic and industrial backgrounds. These workshops have been instrumental in equipping attendees with practical skills and fostering industry-academia collaborations. Additionally, I co-developed an undergraduate internship program within my department, which has provided hands-on research opportunities to over 30 students, many of whom have progressed to postgraduate studies." ],
+        [ dcterms:title "Personal statement" ;
+            c4o:hasContent "I am a passionate and driven materials scientist dedicated to advancing sustainable solutions to global environmental challenges. My research focuses on the development of biodegradable polymers, aiming to reduce plastic waste and its impact on ecosystems. With over a decade of experience in academic and collaborative industry projects, I have cultivated a multidisciplinary approach, integrating chemistry, materials science, and environmental studies to drive innovation in sustainable materials. Throughout my career, I have been committed to fostering an inclusive and collaborative research environment. By mentoring early-career researchers, supervising diverse teams, and organizing training programs, I have supported others in achieving their potential while ensuring knowledge transfer across generations of scientists. Beyond my research contributions, I actively engage with the wider scientific and public communities to amplify the impact of my work. Whether through advising policymakers on sustainable packaging legislation or participating in outreach programs to inspire young minds, I strive to bridge the gap between science and society." ],
+        [ dcterms:title "Contributions to Society" ;
+            c4o:hasContent "My research has directly contributed to addressing global environmental challenges. The biodegradable polymer developed in the Sustainable Polymers Initiative is now being scaled up by GreenPack Ltd., with the potential to replace traditional plastics in 20% of European food packaging markets by 2030. To raise public awareness, I have participated in science communication initiatives such as the BBC series Future Materials, explaining the role of sustainable materials in tackling climate change. I also contribute regularly to outreach programs in local schools, inspiring young students to pursue careers in STEM fields. In 2022, I collaborated with policymakers to draft recommendations for sustainable packaging legislation, which influenced the European Union’s “Green Materials Directive." ] .
+
+<https://w3id.org/skg-if/ontology/data/01/academic-profile-3> a fabio:Expression ;
+    frbr:part [ dcterms:title "Exploring the Duality of Molecular Systems for Drug Design" ;
+            c4o:hasContent "The complexity of molecular behavior in biological systems presents a significant challenge for drug design. My research aims to understand and leverage the dual nature of certain molecular systems, which can exhibit distinct functional states depending on environmental or structural conditions. This work addresses the need for more precise and adaptable pharmaceutical agents that minimize side effects while maximizing therapeutic efficacy. This line of research focuses on characterizing “switchable” biomolecules—compounds that can toggle between active and inactive states in response to stimuli like pH, light, or enzymatic interactions. By employing computational chemistry, structural biology, and experimental validation, I explore how these molecules interact with cellular pathways to enable targeted and dynamic drug delivery systems. This research has improved the understanding of molecular duality, paving the way for next-generation drugs that respond dynamically to the body’s needs. These findings have influenced early-stage pharmaceutical development and contributed to interdisciplinary collaborations between biophysics and pharmacology." ;
+            cito:cites <https://w3id.org/skg-if/ontology/data/01/dataset-1>,
+                <https://w3id.org/skg-if/ontology/data/01/dataset-2>,
+                <https://w3id.org/skg-if/ontology/data/01/publication-1>,
+                <https://w3id.org/skg-if/ontology/data/01/publication-2> ],
+        [ dcterms:title "Ethical AI Models in Biochemical Research" ;
+            c4o:hasContent "As artificial intelligence (AI) becomes integral to biochemical research, there is a growing need to ensure that these technologies operate transparently and equitably. My research investigates how AI models can be designed to prioritize ethical considerations, such as bias reduction, explainability, and equitable data representation, while maintaining scientific rigor and innovation. This work focuses on creating ethical frameworks for the development and application of AI in biochemical data analysis. It involves training neural networks on curated datasets, developing algorithms that emphasize interpretability, and implementing safeguards to prevent biased or unreliable predictions in drug discovery and diagnostics. This research has enhanced the reliability and trustworthiness of AI in biochemical applications, fostering more widespread adoption of these tools across academia and industry. It has also influenced discussions around the ethical implications of AI, contributing to the formulation of policy recommendations for its use in life sciences." ;
+            cito:cites <https://w3id.org/skg-if/ontology/data/01/dataset-3>,
+                <https://w3id.org/skg-if/ontology/data/01/dataset-4>,
+                <https://w3id.org/skg-if/ontology/data/01/publication-3>,
+                <https://w3id.org/skg-if/ontology/data/01/publication-4> ] .
+
+<https://w3id.org/skg-if/ontology/data/01/dataset-1> a fabio:Expression ;
+    dcterms:bibliographicCitation "Molecular Switch Simulation Data for pH-Sensitive Systems” (DOI: 10.1234/molswitch2020)" ;
+    frbr:realizationOf [ a fabio:Dataset ] .
+
+<https://w3id.org/skg-if/ontology/data/01/dataset-2> a fabio:Expression ;
+    dcterms:bibliographicCitation "Experimental Data on Light-Responsive Drug Delivery Molecules (DOI: 10.5678/lightdrugdata2021)" ;
+    frbr:realizationOf [ a fabio:Dataset ] .
+
+<https://w3id.org/skg-if/ontology/data/01/dataset-3> a fabio:Expression ;
+    dcterms:bibliographicCitation "Curated Protein-Ligand Interaction Data for AI Training (DOI: 10.9101/proteinai2022)" ;
+    frbr:realizationOf [ a fabio:Dataset ] .
+
+<https://w3id.org/skg-if/ontology/data/01/dataset-4> a fabio:Expression ;
+    dcterms:bibliographicCitation "Benchmark Data for Evaluating Ethical AI Models in Biochemistry (DOI: 10.8765/benchmarkbioai2023)" ;
+    frbr:realizationOf [ a fabio:Dataset ] .
+
+<https://w3id.org/skg-if/ontology/data/01/ethics-in-ai> a fabio:SubjectTerm ;
+    skos:prefLabel "Ethics in AI" .
+
+<https://w3id.org/skg-if/ontology/data/01/precision-agriculture> a fabio:SubjectTerm ;
+    skos:prefLabel "Precision Agriculture" .
+
+<https://w3id.org/skg-if/ontology/data/01/publication-1> a fabio:Expression ;
+    dcterms:bibliographicCitation "Jekyll, H., & Hyde, E. (2020). Structural insights into pH-sensitive molecular switches for targeted drug delivery. Journal of Molecular Systems, 45(3), 567–582." ;
+    frbr:realizationOf [ a fabio:ScholarlyWork ] .
+
+<https://w3id.org/skg-if/ontology/data/01/publication-2> a fabio:Expression ;
+    dcterms:bibliographicCitation "Jekyll, H. et al. (2021). Computational and experimental evaluation of light-activated biomolecules for precision therapeutics. Biophysical Advances, 12(4), 123–138." ;
+    frbr:realizationOf [ a fabio:ScholarlyWork ] .
+
+<https://w3id.org/skg-if/ontology/data/01/publication-3> a fabio:Expression ;
+    dcterms:bibliographicCitation "Jekyll, H., & Smith, A. (2022). Ethical AI frameworks for protein-ligand interaction predictions. Computational Chemistry Ethics, 8(1), 45–63." ;
+    frbr:realizationOf [ a fabio:ScholarlyWork ] .
+
+<https://w3id.org/skg-if/ontology/data/01/publication-4> a fabio:Expression ;
+    dcterms:bibliographicCitation "Jekyll, H., & Patel, R. (2023). Bias reduction in AI-driven biochemical research: A case study on data curation. Journal of Ethical AI in Science, 2(3), 98–112." ;
+    frbr:realizationOf [ a fabio:ScholarlyWork ] .
+
+scoro:ensures-regulatory-compliance a scoro:Contribution ;
+    skos:prefLabel "Validation" .
+
+scoro:revises-manuscript a scoro:Contribution ;
+    skos:prefLabel "Writing (Review)" .
+
+<https://w3id.org/skg-if/ontology/data/01/biomedical-imaging> a fabio:SubjectTerm ;
+    skos:prefLabel "Biomedical Imaging" .
+
+scoro:conceives-project a scoro:Contribution ;
+    skos:prefLabel "Conceptualization" .
+
+scoro:writes-manuscript-draft a scoro:Contribution ;
+    skos:prefLabel "Writing (Lead)" .
+
+<https://w3id.org/skg-if/ontology/data/01/ahmed-el-zein> a foaf:Agent ;
+    foaf:name "Ahmed El-Zein" .
+
+<https://w3id.org/skg-if/ontology/data/01/clara-green> a foaf:Agent ;
+    foaf:name "Clara Green" .
+
+<https://w3id.org/skg-if/ontology/data/01/hiroshi-nakamura> a foaf:Agent ;
+    foaf:name "Hiroshi Nakamura" .
+
+<https://w3id.org/skg-if/ontology/data/01/james-patterson> a foaf:Agent ;
+    foaf:name "James Patterson" .
+
+<https://w3id.org/skg-if/ontology/data/01/marie-dupont> a foaf:Agent ;
+    foaf:name "Marie Dupont" .
+
+<https://w3id.org/skg-if/ontology/data/01/rina-huang> a foaf:Agent ;
+    foaf:name "Rina Huang" .
+
+<https://w3id.org/skg-if/ontology/data/01/sarah-michaels> a foaf:Agent ;
+    foaf:name "Sarah Michaels" .
+
+<https://w3id.org/skg-if/ontology/data/01/environmental-science> a fabio:SubjectTerm ;
+    skos:prefLabel "Environmental Science" .
+
+<https://w3id.org/skg-if/ontology/data/01/machine-learning> a fabio:SubjectTerm ;
+    skos:prefLabel "Machine Learning" .
+
+<https://w3id.org/skg-if/ontology/data/01/university-of-bologna> a foaf:Organization ;
+    foaf:name "University of Bologna" .
+
+<https://w3id.org/skg-if/ontology/data/01/yoyota-vuvuli> a foaf:Agent ;
+    frapo:submits <https://w3id.org/skg-if/ontology/data/01/academic-profile-1> ;
+    bido:holdsBibliometricDataInTime [ dcterms:description "The total number of citations received by all articles of the researcher of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-citation-count ;
+                    bido:hasNumericValue 124 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher were collected and their citations from other articles were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ],
+        [ dcterms:description "The total number of a researcher's articles from the field of Machine Learning, reflecting their productivity." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-publication-count ;
+                    bido:hasNumericValue 2 ] ;
+            tvc:withinContext <https://w3id.org/skg-if/ontology/data/01/machine-learning> ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher and are related to the Machine Learning field are counted." ;
+                    prov:used [ dcterms:description "Article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ],
+        [ dcterms:description "The total number of citations received by all articles of the researcher of interest from the field of Environmental Science." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-citation-count ;
+                    bido:hasNumericValue 52 ] ;
+            tvc:withinContext <https://w3id.org/skg-if/ontology/data/01/environmental-science> ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher and are related to the Environmental Science field were collected and their citations from other articles were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ],
+        [ dcterms:description "The total number of a researcher's articles from the field of Environmental Science, reflecting their productivity." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-publication-count ;
+                    bido:hasNumericValue 2 ] ;
+            tvc:withinContext <https://w3id.org/skg-if/ontology/data/01/environmental-science> ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher and are related to the Environmental Science field are counted." ;
+                    prov:used [ dcterms:description "Article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ],
+        [ dcterms:description "The total number of a researcher's articles, reflecting their productivity." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-publication-count ;
+                    bido:hasNumericValue 4 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher are counted." ;
+                    prov:used [ dcterms:description "Article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ],
+        [ dcterms:description "The total number of downloads received by all articles of the researcher of interest." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-download-count ;
+                    bido:hasNumericValue 5600 ] ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher were collected and their downloads were counted." ;
+                    prov:used [ dcterms:description "Usage data and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ],
+        [ dcterms:description "The total number of citations received by all articles of the researcher of interest from the field of Machine Learning." ;
+            bido:withBibliometricData [ bido:hasMeasure bido:author-citation-count ;
+                    bido:hasNumericValue 106 ] ;
+            tvc:withinContext <https://w3id.org/skg-if/ontology/data/01/machine-learning> ;
+            prov:wasGeneratedBy [ dcterms:description "All publication records of subtype \"Article\" from the OpenAIRE Graph that are marked as authored by the researcher and are related to the Machine Learning field were collected and their citations from other articles were counted." ;
+                    prov:used [ dcterms:description "Citations and article metadata required to calculate the particular indicator are gathered by the OpenAIRE Graph v9.0.0." ] ;
+                    prov:wasAssociatedWith [ datacite:hasIdentifier [ datacite:usesIdentifierScheme datacite:url ;
+                                    literal:hasLiteralValue "https://github.com/athenarc/bip-scholar-indicators" ] ] ] ] ;
+    foaf:name "Yoyota Vuvuli" .
+
